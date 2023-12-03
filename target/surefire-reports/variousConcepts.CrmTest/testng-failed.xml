@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [variousConcepts.CrmTest]" verbose="0">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="variousConcepts.CrmTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="variousConcepts.CrmTest">
+        <methods>
+          <include name="readConfig"/>
+          <include name="init"/>
+          <include name="loginTest"/>
+          <include name="addCustomer"/>
+          <include name="testAlertLoginPage"/>
+        </methods>
+      </class> <!-- variousConcepts.CrmTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [variousConcepts.CrmTest] -->
